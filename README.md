@@ -66,7 +66,7 @@ Running fio is normally the easiest part - you just give it the job file (or job
 ```fio [options] [jobfile] ...```  
 check out the official FIO repository's section on running fio [here](https://fio.readthedocs.io/en/latest/fio_doc.html#running-fio) for some great examples.
 ### Example
-The way I did it was creating a configuration file which you can check out in the fio-configs directory of the repository. then running this command.  
+The way I did it was by creating this [example-fio.cfg](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/example-fio-cfg.cfg) file , then running this command.  
 ```
 fio <configuration file> --filename=/dev/sda --output=results.json --output-format=json+
  
@@ -75,10 +75,10 @@ fio <configuration file> --filename=/dev/sda --output=results.json --output-form
 - --filename= location of disk you want to run test on 
 - --output= name of the file you want the out put to go to 
 - --output-format= the format type you'd like for the results
-- More flags can be found in the [official FIO repo](https://fio.readthedocs.io/en/latest/fio_doc.html#command-line-options)
+- More flags can be found in the [official FIO repository](https://fio.readthedocs.io/en/latest/fio_doc.html#command-line-options)
 ### Understanding The Results
-After running the test if you decided to store your output in a file using the json+ format you will have a file containing all the results from the test run. These results can be understood by reading the [interpreting the output section](https://fio.readthedocs.io/en/latest/fio_doc.html#interpreting-the-output) in the official FIO repo.  
-Also check out the Results.json file in the repository to see what the json output could looks like. 
+After running the test if you decided to store your output in a file using the json+ format you will have a file containing all the results from the test run. These results can be understood by reading the [interpreting the output section](https://fio.readthedocs.io/en/latest/fio_doc.html#interpreting-the-output) in the official FIO repository.  
+Also check out the [Fio-result.json](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/Fio-result.json) file in the repository to see what the json output could looks like. 
 
 ## Netperf
 
@@ -126,9 +126,29 @@ The way I did it was by doing a TPC-RR and an OMNI test and I used two Metal mac
 #### Flags 
 - -H This option will set the name of the remote system and or the address family used for the control connection.
 - -p This option tells netperf the port number at which it should expect the remote netserver to be listening for control connections.
-- More flags can be found in the [official Netperf repo](https://hewlettpackard.github.io/netperf/doc/netperf.html#Global-Options)
-### Understanding The Results  
+- More flags can be found in the [official Netperf repository](https://hewlettpackard.github.io/netperf/doc/netperf.html#Global-Options)
+### Understanding The Results 
+After running TPC-RR or OMNI tests from netperf the output will come in the terminal after you will need to wait a few moments.
+#### TPC-RR Results 
+```
+Minimum      Mean         90th         99th         Maximum      Stddev       Transaction 
+Latency      Latency      Percentile   Percentile   Latency      Latency      Rate        
+Microseconds Microseconds Latency      Latency      Microseconds Microseconds Tran/s      
+                          Microseconds Microseconds                                       
+25           35.95        49           54           366          7.88         19369.265
+```
+If you aren't quite sure what each result means check out the [TCP-RR section](https://hewlettpackard.github.io/netperf/doc/netperf.html#TCP_005fRR) in the Netperf repository
 
+
+#### OMNI Results
+```
+Local       Remote      Local        Throughput Throughput  
+Send Socket Recv Socket Send Socket             Units       
+Size        Size        Size                                
+Final       Final       Initial                             
+12582912    6254464     87380        9413.92    10^6bits/s  
+```
+If you aren't quite sure what each result means check out the [OMNI section](https://hewlettpackard.github.io/netperf/doc/netperf.html#The-Omni-Tests) in the Netperf repository
 
 ## Helpful Documentation 
 ### Equinix Metal
@@ -136,10 +156,10 @@ The way I did it was by doing a TPC-RR and an OMNI test and I used two Metal mac
 - [SSH Help](https://metal.equinix.com/developers/docs/accounts/ssh-keys/)
 - [Account Help](https://metal.equinix.com/developers/docs/accounts/users/)
 ### FIO 
-- [Fio Repo](https://fio.readthedocs.io/en/latest/fio_doc.html#running-fio)
+- [Fio Repository](https://fio.readthedocs.io/en/latest/fio_doc.html#running-fio)
 - [Fio Ubuntu Manual](http://manpages.ubuntu.com/manpages/bionic/man1/fio.1.html)
 ### Netperf 
-- [Netperf Repo](https://hewlettpackard.github.io/netperf/doc/netperf.html#Top)
+- [Netperf Repository](https://hewlettpackard.github.io/netperf/doc/netperf.html#Top)
 
 
 
