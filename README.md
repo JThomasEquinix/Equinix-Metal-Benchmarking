@@ -12,14 +12,15 @@ The benchmarks that will be shown are FIO, Netperf, and a TPC-C workload test fr
     - [What is FIO](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#what-is-fio-ubuntu-fio-manual)
     - [Setup](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#setup-1)
     - [Running FIO](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#running-fio)
-    - [Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#example) 
+    - [Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#example)
+      - [Flags](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#flags) 
   - [Netperf](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#netperf) 
     - [What is Netperf](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#what-is-netperf-netperf-manual)
     - [Setup](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#setup-2)
-    - [Running Netperf]()
-    - [Example]()
-      - [TPC Stream and OMNI Example]()
-      - [Flags]()
+    - [Running Netperf](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#running-netperf)
+    - [Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#example-1)
+      - [TPC Stream and OMNI Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#tpc-stream-and-omni-example)
+      - [Flags](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#flags-1)
 
 ## Getting Started 
 
