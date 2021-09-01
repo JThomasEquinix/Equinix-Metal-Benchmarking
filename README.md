@@ -106,7 +106,7 @@ The way I did it was by doing a TPC-RR and an OMNI test and I used two Metal mac
   apt install netperf 
   netperf -h  
   ```
-  - Then on the machine you would like to be the remote host run this command to find the port the netserver is running on ```netstat -tulpn | grep netserver ```.
+  - Then on the machine you would like to be the remote host run this command to find the port the netserver is running on ```netstat -tulpn | grep netserver```.
   - Output of command should look similar to this. 
   ``` 
   root@da-c3-small-x86-01-fio-test:~# netstat -tulpn | grep netserver
