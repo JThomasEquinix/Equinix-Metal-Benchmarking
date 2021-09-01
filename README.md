@@ -3,19 +3,19 @@ This repository will be a brief tutorial on how to run a few benchmarks on Equin
 The benchmarks that will be shown are FIO, Netperf, and a TPC-C workload test from cockroachDB.
 
 ## Table of Contents 
-- [Getting Started]()  
-  - [New Users]()
+- [Getting Started](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#getting-started)  
+  - [New Users](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#new-users)
   - [Existing Users]()
-  - [Setup]()
-- [Lets Begin Benchmarking]()
-  - [FIO]()
-    - [What is FIO]()
-    - [Setup]()
-    - [Running FIO]()
-    - [Example]() 
-  - [Netperf]() 
-    - [What is Netperf]()
-    - [Setup]() 
+  - [Setup](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#setup)
+- [Lets Begin Benchmarking](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#lets-begin-benchmarking)
+  - [FIO](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#fio)
+    - [What is FIO](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#what-is-fio-ubuntu-fio-manual)
+    - [Setup](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#setup-1)
+    - [Running FIO](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#running-fio)
+    - [Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#example) 
+  - [Netperf](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#netperf) 
+    - [What is Netperf](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#what-is-netperf-netperf-manual)
+    - [Setup](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#setup-2) 
 
 ## Getting Started 
 
