@@ -13,7 +13,8 @@ The benchmarks that will be shown are FIO and Netperf.
     - [Setup](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#setup-1)
     - [Running FIO](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#running-fio)
     - [Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#example)
-      - [Flags](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#flags) 
+      - [Flags](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#flags)
+    - [Understanding The Results]()
   - [Netperf](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#netperf) 
     - [What is Netperf](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#what-is-netperf-netperf-manual)
     - [Setup](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#setup-2)
@@ -21,6 +22,7 @@ The benchmarks that will be shown are FIO and Netperf.
     - [Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#example-1)
       - [TPC Stream and OMNI Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#tpc-stream-and-omni-example)
       - [Flags](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#flags-1)
+    - [Understanding The Results]()
  - [Helpful Documentation](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#helpful-documentation)
    - [Equinix Metal](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#equinix-metal) 
    - [FIO](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#fio-1)
@@ -40,9 +42,9 @@ The benchmarks that will be shown are FIO and Netperf.
 
 ### Setup 
 - Create a project.  
-- Create your personal [SSH key](https://console.equinix.com/users/c3d60bb9-8ceb-4ac9-bd20-52d7e1538cfe/ssh) for the project.   
+- Create your personal [SSH key](https://metal.equinix.com/developers/docs/accounts/ssh-keys/) for the project.   
 - For more in depth instructions on the SSH key setup check out the documentation on the official [Equinix Metal developer](https://metal.equinix.com/developers/docs/accounts/ssh-keys/) page.  
-- Then deploy your desired machine you'd like to benchmark.
+- Then [deploy](https://metal.equinix.com/developers/docs/deploy/on-demand/) your desired machine you'd like to benchmark.
 - To get SSH into the machine you just deployed go to its respective page and click SSH access and copy that into your terminal. ```ssh root@<your_public_ipv4>```
 
 # Lets Begin Benchmarking 
@@ -73,7 +75,10 @@ fio <configuration file> --filename=/dev/sda --output=results.json --output-form
 - --filename= location of disk you want to run test on 
 - --output= name of the file you want the out put to go to 
 - --output-format= the format type you'd like for the results
-- More flags can be found in the [official FIO repo](https://fio.readthedocs.io/en/latest/fio_doc.html#command-line-options) 
+- More flags can be found in the [official FIO repo](https://fio.readthedocs.io/en/latest/fio_doc.html#command-line-options)
+### Understanding The Results
+After running the test if you decided to store your output in a file using the json+ format you will have a file containing all the results from the test run. These results can be understood by reading the [interpreting the output section](https://fio.readthedocs.io/en/latest/fio_doc.html#interpreting-the-output) in the official FIO repo.  
+Also check out the Results.json file in the repository to see what the json output could looks like. 
 
 ## Netperf
 
@@ -122,6 +127,9 @@ The way I did it was by doing a TPC-RR and an OMNI test and I used two Metal mac
 - -H This option will set the name of the remote system and or the address family used for the control connection.
 - -p This option tells netperf the port number at which it should expect the remote netserver to be listening for control connections.
 - More flags can be found in the [official Netperf repo](https://hewlettpackard.github.io/netperf/doc/netperf.html#Global-Options)
+### Understanding The Results  
+
+
 ## Helpful Documentation 
 ### Equinix Metal
 - [Official Devloper Docs](https://metal.equinix.com/developers/docs/)
