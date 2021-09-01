@@ -21,6 +21,11 @@ The benchmarks that will be shown are FIO, Netperf, and a TPC-C workload test fr
     - [Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#example-1)
       - [TPC Stream and OMNI Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#tpc-stream-and-omni-example)
       - [Flags](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#flags-1)
+ - [Helpful Documentation]()
+   - [Equinix Metal]() 
+   - [FIO]()
+   - [Netperf]()
+   
 
 ## Getting Started 
 
@@ -116,7 +121,18 @@ The way I did it was by doing a TPC-RR and an OMNI test and I used two Metal mac
 #### Flags 
 - -H This option will set the name of the remote system and or the address family used for the control connection.
 - -p This option tells netperf the port number at which it should expect the remote netserver to be listening for control connections.
-- More flags can be found in the [official Netperf repo](https://hewlettpackard.github.io/netperf/doc/netperf.html#Global-Options) 
+- More flags can be found in the [official Netperf repo](https://hewlettpackard.github.io/netperf/doc/netperf.html#Global-Options)
+## Helpful Documentation 
+### Equinix Metal
+- [Official Devloper Docs](https://metal.equinix.com/developers/docs/)
+- [SSH Help](https://metal.equinix.com/developers/docs/accounts/ssh-keys/)
+- [Account Help](https://metal.equinix.com/developers/docs/accounts/users/)
+### FIO 
+- [Fio Repo](https://fio.readthedocs.io/en/latest/fio_doc.html#running-fio)
+- [Fio Ubuntu Manual](http://manpages.ubuntu.com/manpages/bionic/man1/fio.1.html)
+### Netperf 
+- [Netperf Repo](https://hewlettpackard.github.io/netperf/doc/netperf.html#Top)
+
 
 
 
