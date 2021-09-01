@@ -2,6 +2,21 @@
 This repository will be a brief tutorial on how to run a few benchmarks on Equinix Metal machines.  
 The benchmarks that will be shown are FIO, Netperf, and a TPC-C workload test from cockroachDB.
 
+## Table of Contents 
+- [Getting Started]()  
+  - [New Users]()
+  - [Existing Users]()
+  - [Setup]()
+- [Lets Begin Benchmarking]()
+  - [FIO]()
+    - [What is FIO]()
+    - [Setup]()
+    - [Running FIO]()
+    - [Example]() 
+  - [Netperf]() 
+    - [What is Netperf]()
+    - [Setup]() 
+
 ## Getting Started 
 
 ### New Users
