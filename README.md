@@ -21,10 +21,10 @@ The benchmarks that will be shown are FIO, Netperf, and a TPC-C workload test fr
     - [Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#example-1)
       - [TPC Stream and OMNI Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#tpc-stream-and-omni-example)
       - [Flags](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#flags-1)
- - [Helpful Documentation]()
-   - [Equinix Metal]() 
-   - [FIO]()
-   - [Netperf]()
+ - [Helpful Documentation](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#helpful-documentation)
+   - [Equinix Metal](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#equinix-metal) 
+   - [FIO](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#fio-1)
+   - [Netperf](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#netperf-1)
    
 
 ## Getting Started 
