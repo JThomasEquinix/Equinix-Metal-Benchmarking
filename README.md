@@ -20,7 +20,7 @@ The benchmarks that will be shown are FIO and Netperf.
     - [Setup](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking/blob/main/README.md#setup-2)
     - [Running Netperf](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#running-netperf)
     - [Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#example-1)
-      - [TPC Stream and OMNI Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#tpc-stream-and-omni-example)
+      - [TCP Stream and OMNI Example](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#tcp-stream-and-omni-example)
       - [Flags](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#flags-1)
     - [Understanding The Results]()
  - [Helpful Documentation](https://github.com/JThomasEquinix/Equinix-Metal-Benchmarking#helpful-documentation)
@@ -96,10 +96,10 @@ Netperf is a benchmark that can be use to measure various aspect of networking p
 - for some test you may need to deploy two machines unless you already have another machine with a port listening.
 - if you don't have a second machine deploy a second one and repeat the step of installing Netperf with your OS's respective package manager.    
 ### Running Netperf 
-After deploying your Machine/s and doing the setup to run Netperf you just have to run the commamnd of ``` netperf ```  inside the machine this will run a basic TPC stream test. 
+After deploying your Machine/s and doing the setup to run Netperf you just have to run the commamnd of ``` netperf ```  inside the machine this will run a basic TCP stream test. 
 ### Example
-The way I did it was by doing a TPC-RR and an OMNI test and I used two Metal machine one as the remote system running the netserver.  
-#### TPC Stream and OMNI Example 
+The way I did it was by doing a TCP_RR and an OMNI test and I used two Metal machine one as the remote system running the netserver.  
+#### TCP Stream and OMNI Example 
   - run these commands for both machines after [connecting with SSH](https://metal.equinix.com/developers/docs/accounts/ssh-keys/#connecting-with-ssh)
   ```  
   apt update 
@@ -128,8 +128,8 @@ The way I did it was by doing a TPC-RR and an OMNI test and I used two Metal mac
 - -p This option tells netperf the port number at which it should expect the remote netserver to be listening for control connections.
 - More flags can be found in the [official Netperf repository](https://hewlettpackard.github.io/netperf/doc/netperf.html#Global-Options)
 ### Understanding The Results 
-After running TPC-RR or OMNI tests from netperf the output will come in the terminal after you will need to wait a few moments.
-#### TPC-RR Results 
+After running TCP_RR or OMNI tests from netperf the output will come in the terminal after you will need to wait a few moments.
+#### TCP_RR Results 
 ```
 Minimum      Mean         90th         99th         Maximum      Stddev       Transaction 
 Latency      Latency      Percentile   Percentile   Latency      Latency      Rate        
