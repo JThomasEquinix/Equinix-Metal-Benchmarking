@@ -137,7 +137,7 @@ Microseconds Microseconds Latency      Latency      Microseconds Microseconds Tr
                           Microseconds Microseconds                                       
 25           35.95        49           54           366          7.88         19369.265
 ```
-If you aren't quite sure what each result means check out the [TCP-RR section](https://hewlettpackard.github.io/netperf/doc/netperf.html#TCP_005fRR) in the Netperf repository
+If you aren't quite sure what each result means check out the [TCP_RR section](https://hewlettpackard.github.io/netperf/doc/netperf.html#TCP_005fRR) in the Netperf repository
 
 
 #### OMNI Results
